@@ -4,8 +4,17 @@
     <title>Spring Security Example</title>
 </head>
 <body>
-<h1>User, welcome spring boot security page!</h1>
-
-
+<b>Id</b>
+<p th:text="${user.getId()}">VALUE</p>
+<b>Username</b>
+<p th:text="${user.getUsername()}">VALUE</p>
+<b>Name</b>
+<p th:text="${user.getName()}"></p>
+<b>Surname</b>
+<p th:text="${user.getSurname()}">VALUE</p>
+<b>Age</b>
+<p th:text="${user.getAge()}">VALUE</p>
+</br>
+<a th:href="@{/logout}">Logout</a>
 </body>
 </html>

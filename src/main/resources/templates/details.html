@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+    <b>Id</b>
+    <p th:text="${user.getId()}">VALUE</p>
+    <b>Name</b>
+    <p th:text="${user.getName()}"></p>
+    <b>Surname</b>
+    <p th:text="${user.getSurname()}">VALUE</p>
+    <b>Age</b>
+    <p th:text="${user.getAge()}">VALUE</p>
+    </br>
+    <a th:href="@{/admin}">Back</a>
+    </br>
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
